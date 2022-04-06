@@ -1,48 +1,60 @@
 # teste-sicredi
 
-Teste para vaga de backend no Sicredi.
+<h1>Teste para vaga de backend no Sicredi.</h1>
 
-A linguagem utilizada foi Java com Spring Boot. O banco foi o MongoDB e também foi utilizado o Kafka para envio de mensagens.
+<p> linguagem utilizada foi Java com Spring Boot. O banco foi o MongoDB e também foi utilizado o Kafka para envio de mensagens.</p>
 
-Métodos API Rest
+<h2>Métodos API Rest</h2>
+<br>
 
-- ASSOCIADOS
+<h3>- ASSOCIADOS</h3>
 
-Buscar Todos
-GET /api/associado/get-all
+<h4>Buscar Todos</h4>
 
-Buscar um associado utilizando o ID
-GET /api/associado/get?id=
+<h5>GET - /api/associado/get-all</h5>
 
-Salvar um associado
-POST /api/associado/store?name=&cpf=
+<h4>Buscar um associado utilizando o ID</h4>
 
-Deletar um associado
-DELETE /api/associado/delete?id=
+<h5>GET - /api/associado/get?id=</h5>
 
+<h4>Salvar um associado</h4>
 
-- PAUTAS
+<h5>POST - /api/associado/store?name=&cpf=</h5>
 
-Buscar Todos
-GET /api/pauta/get-all
+<h4>Deletar um associado</h4>
 
-Buscar uma pauta utilizando o ID
-GET /api/pauta/get?id=
+<h5>DELETE - /api/associado/delete?id=</h5>
 
-Salvar uma pauta
-POST /api/pauta/store?name=
+<br>
+<h3>- PAUTAS</h3>
 
-Deletar uma pauta
-DELETE /api/pauta/delete?id=
+<h4>Buscar Todos</h4>
 
-Ativar pauta
-PATCH /api/pauta/activate?id=&duration
+<h5>GET - /api/pauta/get-all</h5>
 
+<h4>Buscar uma pauta utilizando o ID</h4>
 
-- VOTOS
+<h5>GET - /api/pauta/get?id=</h5>
 
-Votar
-POST /api/voto/store?idAssociado=&idPauta=&vote
+<h4>Salvar uma pauta</h4>
 
-Checar Resultado
-GET /api/voto/result?id=
+<h5>POST - /api/pauta/store?name=</h5>
+
+<h4>Deletar uma pauta</h4>
+
+<h5>DELETE - /api/pauta/delete?id=</h5>
+
+<h4>Ativar pauta</h4>
+
+<h5>PATCH - /api/pauta/activate?id=&duration</h5>
+
+<br>
+<h3>- VOTOS</h3>
+
+<h4>Votar</h4>
+
+<h5>POST - /api/voto/store?idAssociado=&idPauta=&vote</h5>
+
+<h4>Checar Resultado</h4>
+
+<h5>GET - /api/voto/result?id=</h5>
